@@ -1,0 +1,96 @@
+
+
+Activity7 no.l: Make a program that
+will input three numbers Num1, Num2,
+Num3. Add Numl and Num2. Subtract
+Num3 to the Sum of Numl and Num2
+Enter Number1: 5
+Enter Number2: 10
+Enter Number3: 6
+Total of Num1 and Num2 is : 15
+Subtract Num3 to the total: 9
+
+***************************************************************************************
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, sum, result;
+
+    printf("Enter Number 1: ");
+    scanf("%d", &num1);
+    printf("Enter Number 2: ");
+    scanf("%d", &num2);
+    printf("Enter Number 3: ");
+    scanf("%d", &num3);
+    sum = num1 + num2;
+    result = sum - num3;
+    printf("Total of Num1 and Num2 is: %d\n", sum);
+    printf("Subtract Num3 to the total: %d", result);
+    return 0;
+}
+
+***************************************************************************************
+
+Activity7 no.2:Make a program that
+will compute for the average grade of
+student for the ff: subject: Math,
+English, Science
+
+Enter Name of Student: C ruz, Angelika
+Enter Math Grade :85
+Enter English Grade:85
+Enter Science Grade:85
+The average grade of student is:85
+
+***************************************************************************************
+
+#include <stdio.h>
+
+int main() {
+    char name[20];
+    float math, english, science, average;
+
+    printf("Enter Name of Student: ");
+    scanf("%s", &name);
+    printf("Enter Math Grade: ");
+    scanf("%f", &math);
+    printf("Enter English Grade: ");
+    scanf("%f", &english);
+    printf("Enter Science Grade: ");
+    scanf("%f", &science);
+    average = (math + english + science) / 3;
+    printf("The average grade of %s is: %.2f", name, average);
+    return 0;
+}
+
+***************************************************************************************
+
+Activity7 no.3: Make a program that
+will compute for the salary of an
+employee.
+Enter Employee Name:crz,maria
+Enter Rate per hour; 1 0 0 0
+Enter No.of hours Work:5
+Compute Salary:[sal-rph'nhw]50 0 0
+
+***************************************************************************************
+
+#include <stdio.h>
+
+int main() {
+    char name[20];
+    float rateperhour, numberofhoursworked, salary;
+
+    printf("Enter Employee Name: ");
+    scanf("%s", &name);
+    printf("Enter Rate per Hour: ");
+    scanf("%f", &rateperhour);
+    printf("Enter Number of Hours Worked: ");
+    scanf("%f", &numberofhoursworked);
+    salary = rateperhour * numberofhoursworked;
+    printf("Salary of %s = %f", name, salary);
+    return 0;
+}
+
+***************************************************************************************
